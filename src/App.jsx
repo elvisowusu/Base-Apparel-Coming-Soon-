@@ -17,7 +17,7 @@ function App() {
     <div>
       {screenWidth< 600? 
         <img src={MobileImage} alt=""/>
-        :<img src={DesktopImage} alt=""/>}
+        :""}
     </div>
     <div>
       <h1>WE'RE COMING SOON</h1>
@@ -27,13 +27,18 @@ function App() {
       </p>
       <form action="">
         <input 
+        className=''
+        required
          type="email"
          placeholder='Email Address'
          />
-         <button>
+         <button className='px-4 text-xl py-1 bg-blue-500 rounded-full'>
           <MdKeyboardArrowRight/>
          </button>
       </form>
+    </div>
+    <div>
+    {screenWidth > 600 ?<img src={DesktopImage} alt=""/>:""}
     </div>
     
    </div>
