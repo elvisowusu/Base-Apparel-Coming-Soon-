@@ -25,6 +25,15 @@ function App() {
         Hello follow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcement and our launch deals.
       </p>
+      <form action="">
+        <input 
+         type="email"
+         placeholder='Email Address'
+         />
+         <button>
+          <MdKeyboardArrowRight/>
+         </button>
+      </form>
     </div>
     
    </div>
