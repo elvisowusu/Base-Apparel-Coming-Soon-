@@ -11,8 +11,18 @@ function App() {
 
   return (
    <div>
-    <div><img src={logo} alt="" /></div>
-    <div></div>
+    <div>
+      <img src={logo} alt="" />
+    </div>
+    <div>
+      {screenWidth< 600? 
+        <img src={MobileImage} alt=""></img>
+        :<img src={DesktopImage} alt=""></img>}
+    </div>
+    <div>
+      <h1>WE'RE COMING SOON</h1>
+      <p>Hello follow shoppers! We're currently building</p>
+    </div>
     
    </div>
   )
