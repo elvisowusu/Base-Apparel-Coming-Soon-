@@ -16,12 +16,15 @@ function App() {
     </div>
     <div>
       {screenWidth< 600? 
-        <img src={MobileImage} alt=""></img>
-        :<img src={DesktopImage} alt=""></img>}
+        <img src={MobileImage} alt=""/>
+        :<img src={DesktopImage} alt=""/>}
     </div>
     <div>
       <h1>WE'RE COMING SOON</h1>
-      <p>Hello follow shoppers! We're currently building</p>
+      <p>
+        Hello follow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcement and our launch deals.
+      </p>
     </div>
     
    </div>
