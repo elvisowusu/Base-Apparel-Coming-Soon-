@@ -10,10 +10,10 @@ function App() {
   const [screenWidth,setScreenWidth]=useState(window.innerWidth);
 
   return (
-   <div className="bg-red-300">
-    <div><h2>BASE APPAREL </h2></div>
+   <div>
+    <div><img src={logo} alt="" /></div>
     <div></div>
-    Hello World 
+    
    </div>
   )
 }
