@@ -10,7 +10,8 @@ function App() {
   const [screenWidth,setScreenWidth]=useState(window.innerWidth);
 
   return (
-   <div>
+   <div className='flex justify-center items-center h-[100vh]'>
+    <div className='flex flex-col'>
     <div>
       <img src={logo} alt="" />
     </div>
@@ -19,6 +20,7 @@ function App() {
         <img src={MobileImage} alt=""/>
         :""}
     </div>
+
     <div>
       <h1>WE'RE COMING SOON</h1>
       <p>
@@ -36,6 +38,7 @@ function App() {
           <MdKeyboardArrowRight/>
          </button>
       </form>
+    </div>
     </div>
     <div>
     {screenWidth > 600 ?<img src={DesktopImage} alt=""/>:""}
