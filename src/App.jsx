@@ -24,15 +24,19 @@ function App() {
   
 
   return (
-    <div className="md:flex justify-center items-center h-[100vh] overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')] bg-auto">
-      <div className="flex flex-col ">
-        <div>
+    <div className="md:flex justify-center items-center h-[100vh] sm:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')] bg-auto">
+      <div className="flex flex-col">
+        <div className="pl-[1.5rem] py-9">
           <img src={logo} alt="" />
         </div>
         {screenWidth <= 768 ? <img src={MobileImage} alt="Mobile View" /> : ""}
 
-        <div>
-          <h1>WE'RE COMING SOON</h1>
+        <div className=" flex flex-col justify-center items-center">
+          <h1 className="flex flex-col text-center text-[3rem] ">
+          <span className="">WE'RE</span> 
+          COMING <br />
+          SOON
+          </h1>
           <p>
             Hello follow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcement and
