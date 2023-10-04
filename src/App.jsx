@@ -32,8 +32,8 @@ function App() {
         {screenWidth <= 768 ? <img src={MobileImage} alt="Mobile View" /> : ""}
 
         <div className=" flex flex-col justify-center items-center">
-          <h1 className="flex flex-col text-center text-[3rem] ">
-          <span className=" text-red-400 ">WE'RE</span> 
+          <h1 className="flex flex-col text-center text-[3rem]  text-darkGrayishRed tracking-[0.7rem] mt-[5rem] leading-[3.1rem]">
+          <span className=" text-desaturatedRed font-[100]">WE'RE</span> 
           COMING <br />
           SOON
           </h1>
