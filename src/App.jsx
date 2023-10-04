@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div className="md:flex justify-center items-center h-[105vh] md:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')] bg-no-repeat bg-cover">
+    <div className="md:flex justify-center items-center h-[105vh] md:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')] bg-repeat-x bg-auto">
       <div className="flex flex-col">
         <div className="pl-[1.5rem] py-9 ">
           <img className="w-[8rem]" src={logo} alt="" />
@@ -50,7 +50,7 @@ function App() {
               type="email"
               placeholder="Email Address"
             />
-            <button className="absolute flex justify-center items-center text-[2rem] bg-gradient-to-tr from-startGradient to-endGradient shadow-xl shadow-red-200 px-3  text-white text-xl py-1 rounded-full h-[2.7rem] w-[3.6rem] ml-[15rem]">
+            <button className="absolute flex justify-center items-center text-[2rem] bg-gradient-to-tr from-startGradient to-endGradient shadow-xl shadow-red-100 hover:shadow-red-200 px-3  text-white text-xl py-1 rounded-full h-[2.7rem] w-[3.6rem] ml-[15rem]">
               <MdKeyboardArrowRight/>
             </button>
           </form>
