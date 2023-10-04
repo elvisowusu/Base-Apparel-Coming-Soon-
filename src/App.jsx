@@ -32,7 +32,7 @@ function App() {
 
         <div className=" flex flex-col justify-center items-center">
           <p className="flex flex-col text-center text-[2.5rem] tracking-[0.7rem] mt-[5rem] leading-[2.5rem] mb-[1rem]">
-            <span className="spaned text-desaturatedRed">WE'RE</span>
+            <span className=" text-desaturatedRed">WE'RE</span>
             COMING <br />
             SOON
           </p>
@@ -48,7 +48,7 @@ function App() {
               type="email"
               placeholder="Email Address"
             />
-            <button className="px-4 text-white text-xl py-1 bg-desaturatedRed rounded-full">
+            <button className="px-4 text-white text-xl py-1 bg-gradient-to-r from-startGradient to-endGradient rounded-full">
               <MdKeyboardArrowRight />
             </button>
           </form>

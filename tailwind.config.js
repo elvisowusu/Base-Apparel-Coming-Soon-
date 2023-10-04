@@ -11,6 +11,8 @@ export default {
         'desaturatedRed' : 'hsl(0, 36%, 70%)',
          'softRed' : 'hsl(0, 93%, 68%)',
         'darkGrayishRed' :'hsl(0, 6%, 24%)', 
+        'startGradient' :'hsl(0, 74%, 74%)',
+        'endGradient': 'hsl(0, 80%, 86%)',
       },
     },
   },
