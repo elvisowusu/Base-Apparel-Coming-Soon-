@@ -23,14 +23,14 @@ function App() {
   }, []);
 
   return (
-    <div className="md:flex justify-center items-center h-[100vh] sm:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')] bg-auto">
+    <div className="md:flex justify-center items-center h-[105vh] md:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')] bg-auto">
       <div className="flex flex-col">
         <div className="pl-[1.5rem] py-9 ">
           <img className="w-[8rem]" src={logo} alt="" />
         </div>
         {screenWidth <= 768 ? <img src={MobileImage} alt="Mobile View" /> : ""}
 
-        <div className=" flex flex-col justify-center items-center mb-7">
+        <div className=" flex flex-col justify-center items-center">
           <p className="flex flex-col text-center text-[2.5rem] tracking-[0.7rem] mt-[5rem] leading-[2.5rem] mb-[1rem]">
             <span className=" text-desaturatedRed">WE'RE</span>
             COMING <br />
