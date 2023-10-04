@@ -30,7 +30,7 @@ function App() {
         </div>
         {screenWidth <= 768 ? <img src={MobileImage} alt="Mobile View" /> : ""}
 
-        <div className=" flex flex-col justify-center items-center">
+        <div className=" flex flex-col justify-center items-center mb-7">
           <p className="flex flex-col text-center text-[2.5rem] tracking-[0.7rem] mt-[5rem] leading-[2.5rem] mb-[1rem]">
             <span className=" text-desaturatedRed">WE'RE</span>
             COMING <br />
@@ -41,15 +41,17 @@ function App() {
             store. Add your email below to stay up-to-date with announcement and
             our launch deals.
           </p>
-          <form onSubmit={(e) => e.preventDefault()}>
+          <form 
+            className="flex justify-center"
+            onSubmit={(e) => e.preventDefault()}>
             <input
-              className=""
+              className="relative border-2 active:border-softRed rounded-full px-[1.2rem] py-[0.5rem] w-[18rem]"
               required
               type="email"
               placeholder="Email Address"
             />
-            <button className="px-4 text-white text-xl py-1 bg-gradient-to-r from-startGradient to-endGradient rounded-full">
-              <MdKeyboardArrowRight />
+            <button className="absolute flex justify-center items-center text-[2rem] bg-gradient-to-tr from-startGradient to-endGradient shadow-xl shadow-red-200 px-3  text-white text-xl py-1 rounded-full h-[2.7rem] w-[3.6rem] ml-[15rem]">
+              <MdKeyboardArrowRight/>
             </button>
           </form>
         </div>
