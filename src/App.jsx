@@ -45,7 +45,7 @@ function App() {
             className="flex justify-center"
             onSubmit={(e) => e.preventDefault()}>
             <input
-              className="relative border-2 active:border-softRed rounded-full px-[1.2rem] py-[0.5rem] w-[18rem]"
+              className="relative border-2 active:border-softRed focus:border-softRed rounded-full px-[1.2rem] py-[0.5rem] w-[18rem]"
               required
               type="email"
               placeholder="Email Address"
