@@ -32,12 +32,12 @@ function App() {
         {screenWidth <= 768 ? <img src={MobileImage} alt="Mobile View" /> : ""}
 
         <div className=" flex flex-col justify-center items-center">
-          <h1 className="flex flex-col text-center text-[3rem]  text-darkGrayishRed tracking-[0.7rem] mt-[5rem] leading-[3.1rem]">
-          <span className=" text-desaturatedRed font-[100]">WE'RE</span> 
+          <p className="flex flex-col text-center text-[2.5rem] tracking-[0.7rem] mt-[5rem] leading-[2.5rem] mb-[1rem]">
+          <span className="spaned text-desaturatedRed">WE'RE</span> 
           COMING <br />
           SOON
-          </h1>
-          <p>
+          </p>
+          <p className="text-sm text-center px-[1.5rem] mb-5 text-red-300">
             Hello follow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcement and
             our launch deals.
