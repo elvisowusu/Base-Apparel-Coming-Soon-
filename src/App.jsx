@@ -33,7 +33,7 @@ function App() {
 
         <div className=" flex flex-col justify-center items-center">
           <h1 className="flex flex-col text-center text-[3rem] ">
-          <span className="">WE'RE</span> 
+          <span className=" text-red-400 ">WE'RE</span> 
           COMING <br />
           SOON
           </h1>
