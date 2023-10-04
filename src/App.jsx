@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div className="md:flex justify-center items-center h-[105vh] md:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')] bg-no-repeat bg-auto">
+    <div className="md:flex justify-center items-center h-[105vh] md:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')] bg-no-repeat bg-cover">
       <div className="flex flex-col">
         <div className="pl-[1.5rem] py-9 ">
           <img className="w-[8rem]" src={logo} alt="" />
