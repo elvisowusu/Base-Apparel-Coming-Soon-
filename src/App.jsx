@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="md:flex justify-center items-center h-[105vh] md:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')]  ">
-      <div className="flex flex-col  md:pl-[3.5rem] lg:pl-[4rem] xl:pl-[7rem]">
+      <div className="flex flex-col  md:pl-[3.5rem] lg:pl-[4rem] xl:pl-[7rem] xl:pb-[5rem]">
         <div className="pl-[1.5rem] sm:pl-0 py-5 md:mb-[1rem] xl:pl-0">
           <img className="w-[8rem] md:w-auto" src={logo} alt="" />
         </div>
