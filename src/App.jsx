@@ -47,14 +47,14 @@ function App() {
 
   return (
     <div className="md:flex justify-center items-center h-[105vh] md:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')]  ">
-      <div className="flex flex-col  md:pl-[4rem] lg:pl-[8rem] xl:pl-[12.8rem]">
+      <div className="flex flex-col  md:pl-[4rem] lg:pl-[5rem] xl:pl-[10rem]">
         <div className="pl-[1.5rem] py-9 md:mb-[1rem] xl:pl-0">
           <img className="w-[8rem] md:w-auto" src={logo} alt="" />
         </div>
         {screenWidth <= 768 ? <img src={MobileImage} alt="Mobile View" /> : ""}
 
         <div className=" flex flex-col justify-center items-center  md:items-start md:mb-[6rem] md:mr-8">
-          <p className="flex flex-col text-center text-[2.5rem] tracking-[0.7rem] mt-[5rem] leading-[2.5rem] mb-[1rem] md:text-left md:text-[3rem] md:leading-[3.5rem] xl:text-[5rem] xl:leading-[5rem]">
+          <p className="flex flex-col text-center text-[2.5rem] tracking-[0.7rem] mt-[5rem] leading-[2.5rem] mb-[1rem] md:text-left md:text-[2.5rem] md:leading-[3.1rem] xl:text-[3.5rem] xl:leading-[4rem]">
             <span className=" text-desaturatedRed">WE'RE</span>
             COMING <br />
             SOON
