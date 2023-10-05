@@ -47,14 +47,14 @@ function App() {
 
   return (
     <div className="md:flex justify-center items-center h-[105vh] md:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')]  ">
-      <div className="flex flex-col  md:pl-[3.5rem] lg:pl-[4rem] xl:pl-[7rem] xl:pb-[5rem]">
-        <div className="pl-[1.5rem] sm:pl-0 py-5 md:mb-[1rem] xl:pl-0">
+      <div className="flex flex-col  md:pl-[4rem] lg:pl-[8rem] xl:pl-[9rem]">
+        <div className="pl-[1.5rem]  py-9 md:mb-[1rem] xl:pl-0 xl:py-[3rem]">
           <img className="w-[8rem] md:w-auto" src={logo} alt="" />
         </div>
         {screenWidth <= 768 ? <img src={MobileImage} alt="Mobile View" /> : ""}
 
         <div className=" flex flex-col justify-center items-center  md:items-start md:mb-[6rem] md:mr-8">
-          <p className="flex flex-col text-center text-[2.5rem] tracking-[0.7rem] mt-[5rem] leading-[2.5rem] mb-[1rem] md:text-left md:text-[2.5rem] md:leading-[3.1rem] xl:text-[3.5rem] xl:leading-[4rem]">
+          <p className="flex flex-col text-center text-[2.5rem] tracking-[0.7rem] mt-[5rem] leading-[2.5rem] mb-[1rem] md:text-left md:text-[3rem] md:leading-[3.5rem] xl:text-[4.8rem] xl:leading-[4.9rem]">
             <span className=" text-desaturatedRed">WE'RE</span>
             COMING <br />
             SOON
