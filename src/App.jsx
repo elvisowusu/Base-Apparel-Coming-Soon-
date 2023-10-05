@@ -55,7 +55,7 @@ function App() {
 
         <div className=" flex flex-col justify-center items-center  md:items-start md:mb-[6rem] md:mr-8">
           <p className="flex flex-col text-center text-[2.5rem] tracking-[0.7rem] mt-[5rem] leading-[2.5rem] mb-[1rem] md:text-left md:text-[3rem] md:leading-[3.5rem] xl:text-[5rem] xl:leading-[5rem]">
-            <span className=" text-desaturatedRed">WE'RE</span>
+            <span className=" text-desaturatedRed font-thin">WE'RE</span>
             COMING <br />
             SOON
           </p>
