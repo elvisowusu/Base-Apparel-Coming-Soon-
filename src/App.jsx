@@ -8,13 +8,28 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [errorMessage, setErrorMessage] = useState("");
   const [formData, setFormData] = useState({
     email:"",
   })
   const handleChange =(e)=>{
     const {name, value} = e.target;
     setFormData({ ...formData, [name]:value});
+
+    if(!isValidEmail(value)){
+        setErrorMessage("Please provide a valid email");
+    }else{
+      setErrorMessage("");
+    }
+
   }
+
+  const isValidEmail = (email)=>{
+    // Checking for basic validation using Regular Expression(RegExp)
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+};
+
 
 
   useEffect(() => {
@@ -62,11 +77,12 @@ function App() {
               placeholder="Email Address"
               onChange={handleChange}
             />
-            <button className="absolute flex justify-center items-center text-[2rem] bg-gradient-to-tr from-startGradient to-endGradient shadow-xl shadow-red-100 hover:shadow-red-200 px-3  text-white text-xl py-1 rounded-full h-[2.7rem] w-[3.6rem] ml-[15rem] lg:text-2xl lg:w-[5.5rem] lg:h-[3rem] lg:ml-[19.6rem] xl:w-[5rem] xl:ml-[22.5rem] xl:h-[3.2rem]">
+            <button className="absolute flex justify-center items-center text-[2rem] bg-gradient-to-tr from-startGradient to-endGradient shadow-xl shadow-red-100 hover:shadow-red-200 px-3  text-white text-xl py-1 rounded-full h-[2.7rem] w-[3.6rem] ml-[15rem] lg:text-2xl lg:w-[5.5rem] lg:h-[3.3rem] lg:ml-[19.6rem] xl:w-[5rem] xl:ml-[22.5rem] xl:h-[3.4rem]">
               <MdKeyboardArrowRight/>
             </button>
-            {}
+            {errorMessage && <MdError className="z-10 absolute ml-[10rem] mt-[0.9rem]"/>}
           </form>
+            {errorMessage && <div className="mr-[4rem] md:ml-6 text-red-400 text-sm">{errorMessage}</div>}
         </div>
       </div>
       {screenWidth > 768 ? (
