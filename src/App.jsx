@@ -47,8 +47,8 @@ function App() {
 
   return (
     <div className="md:flex justify-center items-center h-[105vh] md:overflow-hidden bg-[url('./assets/bg-pattern-desktop.svg')]  ">
-      <div className="flex flex-col  md:pl-[4rem] lg:pl-[5rem] xl:pl-[10rem]">
-        <div className="pl-[1.5rem] py-9 md:mb-[1rem] xl:pl-0">
+      <div className="flex flex-col  md:pl-[3.5rem] lg:pl-[4rem] xl:pl-[7rem]">
+        <div className="pl-[1.5rem] sm:pl-0 py-5 md:mb-[1rem] xl:pl-0">
           <img className="w-[8rem] md:w-auto" src={logo} alt="" />
         </div>
         {screenWidth <= 768 ? <img src={MobileImage} alt="Mobile View" /> : ""}
