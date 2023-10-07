@@ -68,7 +68,7 @@ function App() {
             className="flex justify-center"
             onSubmit={(e) => e.preventDefault()}>
             <input
-              className="relative border-2 active:border-softRed focus:border-softRed rounded-full px-[1.2rem] py-[0.5rem] w-[18rem] lg:px-[1.5rem] lg:py-[0.8rem] lg:w-[24rem] xl:px-[2.5rem] xl:w-[26.5rem]"
+              className="relative border-2  rounded-full px-[1.2rem] py-[0.5rem] w-[18rem] lg:px-[1.5rem] lg:py-[0.8rem] lg:w-[24rem] xl:px-[2.5rem] xl:w-[26.5rem]"
               required
               type="email"
               name="email"
@@ -80,7 +80,7 @@ function App() {
             <button className="absolute flex justify-center items-center text-[2rem] bg-gradient-to-tr from-startGradient to-endGradient shadow-xl shadow-red-100 hover:shadow-red-200 px-3  text-white text-xl py-1 rounded-full h-[2.7rem] w-[3.6rem] ml-[15rem] lg:text-2xl lg:w-[5.5rem] lg:h-[3.3rem] lg:ml-[19.6rem] xl:w-[5rem] xl:ml-[22.5rem] xl:h-[3.4rem]">
               <MdKeyboardArrowRight/>
             </button>
-            {errorMessage && <MdError className="z-10 absolute ml-[10rem] mt-[0.9rem]"/>}
+            {errorMessage && <MdError className="z-10 absolute ml-[10rem] mt-[0.9rem] text-softRed"/>}
           </form>
             {errorMessage && <div className="mr-[4rem] md:ml-6 text-red-400 text-sm">{errorMessage}</div>}
         </div>
